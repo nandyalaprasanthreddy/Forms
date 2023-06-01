@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Travel Manangement</title>
+</head>
+<style>
+    body{
+        width:fit-content
+    }
+    tr,td {
+        border: 2px solid black
+    }
+    TABLE{
+        BORDER: 2PX SOLID BLACK;
+        background-color: pink
+    }
+    
+    #btn{
+        background-color: black;
+        color: white;
+    }
+    
+       
+    h2{
+        text-align: center;
+        background-color: orangered; 
+        border-radius: 5px;
+    }
+    select{
+        width:180px
+    }
+    
+    
+</style>
+<body>
+    <form action="">
+            <!--HEADER-->
+            <div class="main">
+    <h2 id="hd">
+        ELITE TRAVEL MANAGEMENT
+    </h2>
+ 
+   
+    
+    <!--first row-->
+    
+        <table>
+
+        <tr>
+            <td id="travel-info"><a href="#travelinfo">Travel-info</a></td> 
+            <td id="personal-info"><a href="">Personal-info</a></td> 
+            <td id="'activities preferences"><a href="">Activities Preferences </a><td>           
+        </tr>
+        <!--second row-->
+        <tr><td id="travelinfo" colspan='3' >
+            <strong>
+              Travel Information
+            </strong>
+        </td>
+       </tr>
+       <!--thirdrow-->
+       <tr>
+        <td><label for="destination">Select Your travel destination</label><br>
+            <select id="destination">
+                <option value="select..">select..</option>
+                <option value="London">London</option>
+                <option value="canada">canada</option>
+                <option value="mauritius">mauritius</option>
+                <option value="switzerland">switzerland</option>
+            </select>
+        </td>
+        <td>
+            <label for="departure">Date of departure</label><br>
+            <input type="date" id="departure"/>
+            
+        </td>
+        <td>
+            <label for="arrival">Date of Arrival</label><br>
+            <input type="date" id="arrival"/>
+        </td>
+       </tr>
+       <!--4throw-->
+       <tr>
+        <td><input type="number" id="kids" ><br><B>No Of Kids</B></td>
+        <td><input type="number" id="teens" ><br><b>No of Teens</b></td>
+        <td><input type="number" id="adults" ><br><b>No of Adults</b></td>
+       </tr>
+       <!--5th row-->
+       <tr>
+        <td><ladel>View Assistance</ladel></td>
+        <td><input type="radio" name="visa" id="yes"/>
+        <label for="yes">YES</label>
+        </td>
+        <td><input type="radio" name="visa" id="no"/>
+        <label for="no">NO</label>
+        </td>
+       </tr>
+       <!--6throw-->
+       <tr>
+        <td colspan="3"><strong>Personal Information</strong></td>
+       </tr>
+       <!--7throw-->
+       <tr>
+        <td><label FOR="customer">CUSTOMER NAME</label></td>
+        <td colspan="2"><input type='text' id='customer' placeholder="Enter the customer name"></td>
+       </tr>
+       <!--8throw-->
+       <tr>
+        <td><label FOR="phone">Phone Number</label></td>
+        <td colspan="2"><input type='tel' id='phone' placeholder="Enter the phone number"></td>
+       </tr>
+       <!--9throw-->
+       <tr>
+        <td><label FOR="mail">Email ID</label></td>
+        <td colspan="2"><input type='email' id='mail' placeholder="Enter the Email ID"></td>
+       </tr>
+       <!--10th row-->
+       <TR>
+        <td colspan="3"><strong>Activities Preferences</strong></td>
+       </TR>
+       <!--11th row-->
+       <tr>
+        <td><input type="radio" id="museum and history sites">
+            <label for="museum and history sites">Museums & History Sites</label>
+        </td>
+       <td><input type="radio" id="cultures">
+        <label for="cultures">Cultures</label>
+       </td>
+   </td>
+   <td><input type="radio" id="Beaches">
+    <label for="Beachess">Beaches</label>
+    </td>
+</tr>
+<!--12th row-->
+<tr>
+    <td><input type="radio" id="shoping">
+        <label for="shoping">Shoping</label>
+    </td>
+   <td><input type="radio" id="wildlife">
+    <label for="wildlife">Wildlife</label>
+    </td>
+</td>
+<td><input type="radio" id="relaxing">
+<label for="relaxing">Relaxing</label>
+</td>
+</tr>
+<!--13throw-->
+<tr>
+   <td > <a href=""><strong>** Click here for unlock exclusive offers</strong></a></td>
+</tr>
+    </table>
+    <button id='btn' type="submit">BUILD PACKAGE</button>
+</div>
+ </form>
+    
+</body>
+</html>

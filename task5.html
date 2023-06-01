@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental form</title>
+    <style>
+      td {
+        border: 2px solid black;
+      }
+      h2 {
+        border: 2px solid black;
+        background-color: aquamarine;
+      }
+      h3 {
+        border: 2px solid black;
+        display: inline-block;
+        background-color: crimson;
+      }
+
+      div {
+        width: fit-content;
+        border: 3px solid black;
+        background-color: rgb(186, 135, 7);
+      }
+      #btn {
+        margin-bottom: 5px;
+        margin-left: 5px;
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Happyplace - Rental Property Portal</h2>
+      <h3>Property Details</h3>
+      <form>
+        <table>
+          <!--1st row-->
+          <tr>
+            <td>
+              <select id="HOUSE" name="HOUSE">
+                <option value="indepentdent house">Independent House</option>
+                <option value="rental house">Rental House</option>
+                <option value="villa house">villa House</option>
+                <option value="duplex house">Duplex House</option>
+              </select>
+            </td>
+            <td>
+              <select id="num" name="number">
+                <option value="5-10">5-10</option>
+                <option value="2-3">2-3</option>
+                <option value="1">1</option>
+                <option value="5">5</option>
+              </select>
+            </td>
+          </tr>
+          <!--2nd row-->
+          <tr>
+            <td><input type="number" placeholder="2000" /></td>
+            <td><input type="number" placeholder="3" /></td>
+          </tr>
+          <!--3rd row-->
+          <tr>
+            <td colspan="2">
+              <textarea area rows="5" cols="45">
+ 
+                 No4, Cawley Brown Road,
+                 Coimbatore                        
+            </textarea
+              >
+            </td>
+          </tr>
+          <!--4th row-->
+          <tr>
+            <td>
+              <label for="post">Posted on:</label><br />
+              <input type="date" id="post" />
+            </td>
+            <td>
+              <label for="avail">Available form:</label><br />
+              <input type="date" id="avail" />
+            </td>
+          </tr>
+          <!--5th row-->
+          <tr>
+            <td>
+              <label for="amount">Rent :</label>
+              <input type="range" id="amount" max="17500" placeholder="17500" />
+            </td>
+            <td>
+              <label for="deposit">Deposit :</label>
+              <input
+                type="range"
+                id="deposit"
+                max="17500"
+                placeholder="150000" />
+            </td>
+          </tr>
+          <!--6th row-->
+          <tr>
+            <td><label>Enter the Floor No*</label></td>
+            <td>
+              <input type="checkbox" id="parking availablity" />
+              <label for="parking availablity">Parking facility</label>
+            </td>
+          </tr>
+          <!--7throw-->
+          <tr>
+            <td><label>Extra Amenties</label></td>
+            <td>
+              <input type="checkbox" id="lift" /> <label for="lift">Lift</label
+              ><br />
+              <input type="checkbox" id="staff" />
+              <label for="staff">Maintainance staff</label><br />
+              <input type="checkbox" id="park" />
+              <label for="park">Park</label><br />
+              <input type="checkbox" id="intercorn" />
+              <label for="intercorn">Intercorn</label><br />
+              <input type="checkbox" id="furnishing" />
+              <label for="furnishing">Furnishing</label><br />
+            </td>
+          </tr>
+
+          <!--8th row-->
+          <tr>
+            <td>
+              <input type="text" placeholder="Ram" />
+            </td>
+            <td><input type="tel" placeholder="9159933777" /></td>
+          </tr>
+        </table>
+      </form>
+
+      <br />
+      <input id="btn" type="BUTTON" value="POST PROPERTY" />
+    </div>
+  </body>
+</html>

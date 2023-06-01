@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Care Centre-Appointment</title>
+    <style>
+      td {
+        border: 2px solid orange;
+        border-radius: 4px;
+      }
+      div {
+        width: fit-content;
+        border: 3px solid black;
+        background-color: aquamarine;
+      }
+      button {
+        margin: 5px;
+      }
+      h2 {
+        background-color: darksalmon;
+        border-radius: 5px;
+      }
+      input {
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header-->
+    <div>
+      <h2>Beauty Care Centre-Appointment</h2>
+      <form>
+        <!--1st row-->
+        <table>
+          <tr>
+            <td><label for="name"> Name* </label></td>
+            <td>
+              <input type="text" id="name" place holder="Enter your name" />
+            </td>
+          </tr>
+          <!--2nd row-->
+          <tr>
+            <td><label for="sex"> Gender* </label></td>
+            <td>
+              <input type="radio" id="sex" />
+              <label for="sex">Male</label>
+              <input type="radio" id="sex" />
+              <label for="sex">Female</label>
+              <input type="radio" id="sex" />
+              <label for="sex">Others</label>
+            </td>
+          </tr>
+          <!--3rd row-->
+          <tr>
+            <td><label for="mail"> E-mail address* </label></td>
+            <td>
+              <input
+                type="email"
+                id="mail"
+                place
+                holder="Example:abc@gmail.com" />
+            </td>
+          </tr>
+          <!--4th row-->
+          <tr>
+            <td><label for="phone"> Mobile No* </label></td>
+            <td>
+              <input
+                type="tel"
+                id="phone"
+                place
+                holder="Enter your mobile number" />
+            </td>
+          </tr>
+          <!--5th row-->
+          <tr>
+            <td><label for="service"> Services* </label></td>
+            <td>
+              <select name="services" id="service">
+                <option value="select..">select..</option>
+                <option value="eyebrows" selected>Eyebrows</option>
+                <option value="Facewash">Facewash</option>
+                <option value="Haircut">Haircut</option>
+                <option value="others">others</option>
+              </select>
+            </td>
+          </tr>
+          <!--6th row-->
+          <tr>
+            <td><label for="date"> Date* </label></td>
+            <td>
+              <input type="date" id="date" />
+            </td>
+          </tr>
+          <!--7th row-->
+          <tr>
+            <td><label for="time"> Time* </label></td>
+            <td>
+              <input type="time" id="time" />
+            </td>
+          </tr>
+          <!--6th row-->
+          <tr>
+            <td><label for="address"> Address </label></td>
+            <td>
+              <textarea name="" id="address" cols="30" rows="10">
+Enter your address</textarea
+              >
+            </td>
+          </tr>
+        </table>
+        <br />
+        <input type="checkbox" id="permission" /><label for="permission">
+          I agree to terms of services and privacy policy</label
+        ><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
